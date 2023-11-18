@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    .mo{
+        color: #fff;
+        margin-top: 200px;
+        display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    }
+    h1{
+        font-family: "AlphaCentauri" !important;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+         width: 20%;
+         background-color: #f1f1f1;
+         /* padding: 20px; */
+         border-radius: 10px;
+         text-align: center;
+         /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); */
+         margin-bottom: 50px;
+         margin-top: 100px;
+    }
+    .box:hover{
+        transform: scale(1.25);
+        font-size: 20%;
+    }
+
+     .box img {
+         width: 100%;
+         border-radius: 5px;
+         margin-bottom: 10px;
+    }
+
+     .box h2 {
+         font-size: 24px;
+         font-weight: bold;
+         margin-bottom: 10px;
+    }
+
+     .box p {
+         font-size: 16px;
+         line-height: 1.5;
+    }
+    button{
+        border-radius: 5px;
+        color: #fff;
+        background: black;
+    }
+    .video-container {
+        position: relative;
+        margin-top: 50px;
+    }
+
+    .vido {
+       width: 100%;
+       height: 2%;
+    }
+
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      animation: marquee 25s linear infinite;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      justify-content: space-between; /* Tạo khoảng cách giữa các hình ảnh và giữa các hàng */
+    }
+
+    .marquee{
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee img {
+      display: inline-block;
+      margin-right: 13px; /* Khoảng cách giữa các ảnh */
+      width: 200px; /* Thiết lập kích thước cho tất cả các ảnh */
+      height: 200px;
+    }
+    
+    .giua{
+      margin-top: 80px;
+    }
+
+    .dau{
+        color: #fff;
+        margin-bottom: 50px;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+   
+</style>
+<body>
+
+    <navbar class="navbar-container">
+        <div class="logo-container">
+            <a href="index.html">spacex</a>
+        </div>
+
+        <div class="bars">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <ul class="nav-items">
+            <li class="nav-link"><a href="#sectionzero">home</a></li>
+            <li class="nav-link"><a href="#planets">planets</a></li>
+            <li class="nav-link"><a href="#solarsystem">solar system</a></li>
+            <li class="nav-link"><a href="#moontool">moons</a></li>
+            <li class="nav-link"><a href="#wildcard">more</a></li>
+            <div class="login-register">
+                <a href="#" class="button">Login</a>
+                <a href="#" class="button">Register</a>
+            </div>
+        </ul>
+    </navbar>
+    <div class="mo">
+        <h1>Want to discover more about planets?</h1>
+        <h2 class="dau">Please support us to give you more on the issues you want to explore</h2>
+    </div>
+    <div class="video-container">
+        <div class="vido">
+          <video src="hanht.mp4" loop autoplay muted style="width: 100%; max-height: 5%;">
+                Your browser does not support the video tag.
+          </video>
+        </div>
+    </div>
+    <div>
+        <h2 class="giua"><center>Welcome to the package</center></h2>
+    </div>
+    <div class="container">
+        <div class="box">
+          <img src="images/neptune.png" alt="Image 1">
+          <h2 style="font-family: 'Courier New', Courier, monospace;">Vip Pro 1</h2>
+          <h2>Neptune</h2>
+          <p>$10/Discover the planet Neptune.</p>
+         <a href="code.html"> <button>Donate now </button></a>
+        </div>
+        <div class="box">
+          <img src="images/uranus.png" alt="Image 2">
+          <h2 style="font-family: 'Courier New', Courier, monospace;">Vip Pro 2</h2>
+          <h2>Uranus</h2>
+          <p>$20/ Discover the planet Uranus.</p>
+          <a href="code1.html"> <button>Donate now </button></a>
+        </div>
+        <div class="box">
+          <img src="images/saturn.png" alt="Image 3">
+          <h2 style="font-family: 'Courier New', Courier, monospace;">Vip Pro 3</h2>
+          <h2>Saturn</h2>
+          <p>$30/ Discover the planet Mercury.</p>
+          <a href="code2.html"> <button>Donate now </button></a>
+        </div>
+      </div>
+      <div class="marquee">
+        <img src="images/earth1.png" alt="" class="i1">
+        <img src="images/jupiter.png" alt="" class="i2">
+        <img src="images/mars.png" alt="" class="i3">
+        <img src="images/mercury.png" alt="" class="i4">
+        <img src="images/uranus.png" alt="" class="i5">
+        <img src="images/neptune.png" alt="" class="i6">
+        <img src="images/saturn.png" alt="" class="i7">
+        <img src="images/venus.png" alt="" class="i8">
+      </div>
+      <div>
+        <h2 class="dau"><center>Please support us and you will have more interesting experiences !</center></h2>
+      </div>
+      
+
+</body>
+</html> 
+

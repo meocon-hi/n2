@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+       body {
+           background-image: url("nen.png");
+           background-size: cover;
+           background-position: center;
+           height: 100vh;
+        }
+        img{
+            width: 230px;
+            height: 230px;
+            margin-top: 70px;
+        }
+        img:hover{
+            transform: scale(1.25);
+            font-size: 20%;
+        }
+        p{
+            display: inline-block;
+            margin-left: 82px;
+            margin-right: 85px;
+            margin-top: 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #fff;
+        }
+        .phai {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px #888888;
+			margin: 50px auto;
+			max-width: 400px;
+            height: auto;
+			width: 100%;
+    
+		}
+		input {
+			display: block;
+			/* margin-top: 10px; */
+            line-height: 30px;
+            width: 300px;
+		}
+        input[type="submit"] {
+            background-color: red;
+            color: white;
+        }
+        .phai{
+            display: inline-block;
+            margin-top: 100px;
+        }
+        .trai{
+            float: left;
+            margin-left: 100px;
+            margin-right: 160px;
+            margin-top: 50px;
+        }
+
+        .back-btn1 {
+			display: inline-block;
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+
+		.back-btn1 i {
+			margin-left: 15px;
+		}
+        .back-btn1:hover {
+	        background-color: lightsalmon;
+}
+        .back-btn2 {
+			display: inline-block;
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+
+		.back-btn2 i {
+			margin-left: 15px;
+		}
+
+        .back-btn2:hover {
+	        background-color: lightsalmon;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h2 style="font-family: 'Courier New', Courier, monospace; margin-top: 60px; color: #fff;"><center>Please support our page</center></h2>
+    </div>
+    <div class="trai">
+        <h1 style="color: darksalmon; margin-left: 280px; font-family: 'Courier New', Courier, monospace;">Universe</h1>
+        <h2 style="margin-left: 290px; color: #fff">Discover now</h2>
+        <img src="money.png" alt="">
+        <img src="images/uranus.png" alt="">
+        <img src="code.png" alt="" style="font-size: 50px;">
+        <br>
+        <p>Lucky bag</p> <p>Nepturn</p> <p>QR code</p>
+    </div>
+    <div class="phai">
+            <form action="save.php" method="post">
+                <center>
+                <input type="text" id="name" name="name" required placeholder="Name" style="margin-top: 20px;"> 
+          <br>
+                <input type="email" id="email" name="email" required placeholder="Email">
+              <br>
+                <input id="address" name="address" required placeholder="Address"></input>
+                <br>
+                <input type="tel" id="phone" name="phone" required placeholder="Phone">
+                <br>
+                <input type="submit" value="Save information" style="margin-bottom: 20px;">
+          </center>
+            </form>
+    </div>
+    <a href="index.html" class="back-btn1"><i class="fa fa-arrow-left"></i> Back to home page</a>
+    <a href="donate.html" class="back-btn2">Back to Donate page<i class="fa fa-arrow-right"></i></a>
+</body>
+</html>

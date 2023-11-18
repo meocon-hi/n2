@@ -1,0 +1,1390 @@
+@import url('https://fonts.cdnfonts.com/css/alphacentauri');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600;700&family=Poppins:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    background-image: url(images/background_stars_grid.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+    align-items: center;
+    background: rgba(11, 5, 29, 0.966);
+    mix-blend-mode: screen;
+    color: #fff;
+    position:fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-container .logo-container a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-family: "AlphaCentauri" !important;
+    letter-spacing: 15px;
+    text-shadow: 0 0 20px #f1f1f1;
+}
+
+.navbar-container .nav-items {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navbar-container .nav-items .nav-link a {
+    color: #fff;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.navbar-container .nav-items .nav-link:after {
+    display: block;
+    content: "";
+    border-top: 2px solid rgb(73, 115, 254);
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    -webkit-transition: transform 250ms ease-in-out;
+    -moz-transition: transform 250ms ease-in-out;
+    -ms-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+}
+
+.navbar-container .nav-items .nav-link:hover:after {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+} 
+
+.navbar-container .nav-items .nav-link a:hover {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+
+.navbar-container .nav-items .login-register {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navbar-container .nav-items .login-register .button {
+    color: #fff;
+    border: 2px solid rgb(73, 115, 254);
+    padding: 5px 20px;
+    border-radius:3px ;
+    -webkit-border-radius:3px ;
+    -moz-border-radius:3px ;
+    -ms-border-radius:3px ;
+    -o-border-radius:3px;
+    text-transform: uppercase;
+    transition: all ease-in 0.3s;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    -o-transition: all ease-in 0.3s;
+}
+
+.navbar-container .nav-items .login-register .button:hover {
+    background: rgb(73, 115, 254);
+}
+
+/* HOME PARALLAX */
+
+#sectionzero {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg img {
+    width: 110vw;
+    height: 110vh;
+    filter: brightness(0.6);
+}
+
+.rock1 {
+    position: absolute !important;
+    left: 10vw !important;
+    top: 20vh !important;
+}
+
+.rock1 img {
+    width: 40%;
+    filter: brightness(0.5);
+}
+
+.text h1{
+    font-family: "AlphaCentauri" !important;
+    font-size: 5vw;
+    color: #fff;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 35vh;
+    left: 34vw;
+}
+
+.earth img {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 34vw;
+    top: 25vh;
+    z-index: 1;
+    filter: brightness(0.7);
+}
+
+.mid {
+    left: -150px !important;
+    bottom: -100px !important;
+    top: unset !important;
+}
+
+.mid img {
+    width: 100%;
+    z-index: 2;
+    left: -20px;
+    top: 20vh !important;
+    filter: brightness(0.8);
+}
+
+.fore {
+    right: -50px !important;
+    bottom: -200px !important;
+    top: 0px !important;
+    left: unset !important;
+}
+
+.fore img {
+    width: 400px;
+    height: 110vh;
+    z-index: 3;
+    filter: brightness(0.5);
+}
+
+/* PLANETS */
+
+.hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+  .swiper-slide {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10000000000000000000000000000000000000px;
+    background-image: url(images/Bg.jpg);
+    box-shadow: 15px 15px 15px 15px rgba(9, 3, 86, 0.966);
+  }
+  
+  .swiper-slide img {
+    position: absolute;
+    bottom: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 600px;
+    transition: 0.5s;
+}
+
+.swiper-slide:hover img {
+    left: 27%;
+}
+
+.swiper-slide .content {
+    position: relative;
+    width: 80%;
+    left: 20%;
+    padding: 100px;
+    margin: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    bottom: 32px;
+}
+
+.swiper-slide:hover .content {
+    opacity: 1;
+    visibility: visible;
+    left: 30%;
+}
+
+   .slide-text {
+    position: absolute;
+    top: -5px;
+    left: 15%;
+    width: 200px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .slide-text p {
+    font-size: 40px;
+    font-family: "AlphaCentauri" !important;
+    color: #fff;
+    position: relative;
+  }
+  
+  .slide-text p span {
+    position: absolute;
+  }
+  
+   .slide-detail {
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide-detail p {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    opacity: 0.8;
+    line-height: 30px;
+  }
+  
+  .slide-detail p span {
+    position: absolute;
+  }
+  
+  .slide-detail-facts {
+    position: absolute;
+    top: 200px;
+    left: 8.25%;
+    z-index: 10;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    color: #fff;
+  }
+  .slide-detail-facts div {
+    display: flex;
+    position: relative;
+  }
+  .slide-detail-facts div h5 {
+    margin-right: 20px;
+  }
+
+  .slide-detail-facts a {
+    position: relative;
+    display: inline-block;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10000000000000000000000000000000000000px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .slide-detail-facts a:hover, a:active {
+    background: rgb(73, 115, 254);
+    color: #fff;
+  }
+ 
+  .slide-number {
+    position: absolute;
+    top: -150px;
+    left: 7%;
+    z-index: 9;
+    width: 200px;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0.1 !important;
+  }
+  
+  .slide-number h4 {
+    color: #fff;
+    font-size: 100px;
+    position: relative;
+  }
+
+  .slide-number h4 span {
+    position: absolute;
+  }
+
+  /* SOLAR SYSTEM */
+
+  .solar {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/stars.png);
+}
+
+.ss {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.neptune-container {
+   position: absolute;
+   height: 850px;
+   width: 850px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.neptune-container > img {
+height: 50px;
+width: 50px;
+animation: neptune-rotation 53954ms linear infinite;
+}
+
+.uranus-container {
+   position: absolute;
+   height: 750px;
+   width: 750px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.uranus-container > img {
+   height: 75px;
+   width: 75px;
+   animation: uranus-rotation 37054ms linear infinite;
+}
+
+.saturn-container {
+   position: absolute;
+   height: 600px;
+   width: 600px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.saturn-container > img {
+   height: 75px;
+   width: 75px;
+   animation: saturn-rotation 33218ms linear infinite;
+}
+
+.jupiter-container {
+   position: absolute;
+   height: 500px;
+   width: 500px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.jupiter-container > img {
+   height: 75px;
+   width: 75px;
+   animation: jupiter-rotation 27339ms linear infinite;
+}
+
+.mars-container {
+   position: absolute;
+   height: 400px;
+   width: 400px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.mars-container > img {
+   height: 35px;
+   width: 35px;
+   animation: mars-rotation 12684ms linear infinite;
+}
+
+.earth-container {
+   position: absolute;
+   height: 350px;
+   width: 350px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.earth-container > img {
+   height: 30px;
+   width: 30px;
+   animation: earth-rotation 11079ms linear infinite;
+}
+
+.venus-container {
+   position: absolute;
+   height: 300px;
+   width: 300px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.venus-container > img {
+   height: 20px;
+   width: 20px;
+   animation: venus-rotation 7259ms linear infinite;
+}
+
+.mercury-container {
+   position: absolute;
+   height: 250px;
+   width: 250px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid white;   
+}
+
+.mercury-container > img {
+   height: 15px;
+   width: 15px;
+   animation: mercury-rotation 5768ms linear infinite;
+}
+
+.sun-container {
+   position: absolute;
+   height: 200px;
+   width: 200px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sun-container > img {
+   height: 310px;
+   width: 310px;
+   border-radius: 100%;
+   background-color: transparent;
+   pointer-events: none;
+}
+
+
+@keyframes neptune-rotation {
+    
+0% {
+   transform: rotate(0deg) translate(425px) rotate(0deg);
+}
+
+100% {
+   transform: rotate(360deg) translate(425px) rotate(360deg);
+ }
+}
+
+@keyframes uranus-rotation {
+
+0% {
+   transform: rotate(0deg) translate(375px) rotate(0deg);
+}
+   
+100% {
+    transform: rotate(360deg) translate(375px) rotate(360deg);
+ }
+}
+   
+@keyframes saturn-rotation {
+ 
+0% {
+    transform: rotate(0deg) translate(300px) rotate(0deg);
+ }
+      
+100% {
+    transform: rotate(360deg) translate(300px) rotate(360deg);
+  }
+ }
+      
+@keyframes jupiter-rotation {
+
+ 0% {
+ transform: rotate(0deg) translate(250px) rotate(0deg);
+}
+         
+100% {
+ transform: rotate(360deg) translate(250px) rotate(360deg);
+  }
+ }
+         
+ @keyframes mars-rotation {
+
+0% {
+transform: rotate(0deg) translate(200px) rotate(0deg);
+  }
+           
+100% {
+transform: rotate(360deg) translate(200px) rotate(360deg);
+  }
+ }
+            
+ @keyframes earth-rotation {
+
+0% {
+transform: rotate(0deg) translate(175px) rotate(0deg);
+    }
+              
+100% {
+transform: rotate(360deg) translate(175px) rotate(360deg);
+    }
+ }
+               
+ @keyframes venus-rotation {
+
+   0% {
+   transform: rotate(0deg) translate(150px) rotate(0deg);
+       }
+                 
+   100% {
+   transform: rotate(360deg) translate(150px) rotate(360deg);
+       }
+    }
+                  
+               
+ @keyframes mercury-rotation {
+
+   0% {
+   transform: rotate(0deg) translate(125px) rotate(0deg);
+       }
+                 
+   100% {
+   transform: rotate(360deg) translate(125px) rotate(360deg);
+       }
+    }
+
+/* MOONS */
+
+.moonlight {
+    /* min-height: 100vh;
+    background: linear-gradient(#2b1055,#7597de); */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moonlight::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#1c0522,transparent);
+    z-index: 1000;
+}
+
+.moonlight img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.moonlight img#moon {
+    mix-blend-mode: screen;
+}
+
+.moonlight img#mountains_front {
+    z-index: 10;
+}
+
+.moonlight #textmoon {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "AlphaCentauri" !important;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+.mattrang {
+    background: #1c0522;
+}
+
+.sec-01, .sec-02, .sec-03 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.dump {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.contentmoon {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentmoon .imagemoon {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.contentmoon .imagemoon img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contentmoon .text-box{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px,50px);
+}
+
+.contentmoon .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons {
+    margin-top: 100px;
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 80px;
+    color: #fff;
+}
+
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.media-info li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1), .media-info li:nth-child(5) {
+    padding-left: 100px;
+
+}
+
+.media-info li:nth-child(2), .media-info li:nth-child(4) {
+    padding-left: 50px;  
+}
+
+
+
+/* MORE */
+#wildcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.cardwc {
+    width: 250px;
+    height: 200px;
+    color: white;
+    margin: 1em;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5em;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.iconwc {
+    width: 60px;
+    height: 60px;
+    background: #da0037;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.cardwc:hover .iconwc {
+    box-shadow: 0 0 10px red;
+}
+
+.iconwc i {
+    font-size: 1.5em;
+}
+
+.cardwc p {
+    margin: 0.5em 0;
+    font-size: 0.8em;
+    display: none;
+    opacity: 0;
+    transition: all.4s;
+    z-index: 11;
+}
+
+.cardwc:hover p {
+    display: block;
+    opacity: 1;
+}
+
+.cardwc h4 {
+    margin-top: 0.5em;
+    z-index: 11;
+}
+
+.cardwc::before, .cardwc::after {
+    content: "";
+    position: absolute;
+    background: #171717;;
+    width: 100%;
+    height: 40%;
+    z-index: 10;
+    border-radius: 15px 15px 0 0;
+    transition: all .4s;
+}
+
+.cardwc::before {
+    top: 0;
+}
+
+.cardwc:hover::before {
+    transform: translateY(-30px);
+}
+
+.cardwc::after {
+    bottom: 10px;
+    height: 60%;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Adjustment for ipad screens */
+
+@media(max-width: 1040px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-container .nav-items {
+        gap: 0.1rem;
+    }
+
+    .navbar-container .nav-items .nav-link a, .navbar-container .nav-items .login-register .button {
+        font-size: 0.9rem;
+    }
+
+    .card 
+    {
+        position: relative;
+        width: auto;
+        max-width: 600px;
+        transition: 0.5s;
+        align-items: flex-start;
+    }
+
+    .card:hover {
+        height: 600px;
+    }
+
+    .card:hover img {
+        left: 80%;
+        height: 350px;
+    }
+
+    .card .content {
+        width: 100%;
+        left: 0;
+        padding: 40px;
+    }
+    /* .founder-box{
+     float:none  !important ;
+     margin-bottom: 100px; 
+    } */
+}
+/* sửa cái sáng lập */
+@media(max-width: 1500px) {
+  .founder-box{
+     float:none  !important ;
+     margin-bottom: 100px; 
+    }  
+}
+
+/* adjustment for mobile phones */
+
+@media(max-width: 700px) {
+    .navbar-container .nav-items {
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        width: 100vw;
+        background: rgb(35, 29, 53);
+        padding: 1rem 0;
+        height: 100vh;
+        z-index: 99;
+        right: -100%; 
+        transition: 0.2s ease-in;
+        -webkit-transition: 0.2s ease-in;
+        -moz-transition: 0.2s ease-in;
+        -ms-transition: 0.2s ease-in;
+        -o-transition: 0.2s ease-in;
+}
+
+.bars {
+    height: auto;
+    width: 22px;
+    cursor: pointer;
+}
+
+.bars .bar {
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    margin: 4px;
+}
+
+.navbar-container .nav-items {
+    gap: 3rem;
+}
+
+.navbar-container .nav-items .login-register {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    width: 50%;
+}
+
+.navbar-container .nav-items .login-register .button {
+    padding: 1rem 0;
+}
+
+.card .content {
+    padding: 30px;
+}
+
+.card:hover img {
+    height: 350px;
+}
+
+}
+
+/* The active class below will be used to toggle the nav -items in JS */
+
+.navbar-container .nav-items.active {
+    right: 0;
+}
+
+/* css phan about web */
+.moon-section {
+    position: relative;
+  }
+
+  .moon-section .moon-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: screen;
+  }
+
+  .moon-section .mountain-behind-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .moon-section .mountain-front-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .moon-section .text-moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "AlphaCentauri" !important;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 11;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .image-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .image-section img {
+    max-width: 100%;
+   height: auto;
+    border-radius: 4px;
+  }
+  
+  .text-section {
+    flex: 2;
+  }
+  
+  .text-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .text-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f0eaea;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+  }
+  
+  /* Mờ sáng background */
+ 
+  .content-wrapper {
+    background: rgba(36, 29, 29, 0.514);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* advantage */
+  .advantages {
+    background-color: rgba(54, 39, 68, 0.671);  }
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .box {
+    flex-basis: 30%;
+    background-color: #92888838;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 50px;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container:hover .box:not(:hover) {
+    transform: translateX(-10px);
+  }
+  
+  .box:last-child {
+    margin-right: 0;
+  }
+  
+/* ảnh của nhà sáng lập*/
+.founder-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .founder-image {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 2px solid blanchedalmond;
+  }
+  
+  .founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .founder-box:hover .founder-image img {
+    transform: scale(1.2);
+  }
+  
+  .founder-info {
+    flex-grow: 1;
+  }
+  
+  .founder-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ccc2c2;
+  }
+  
+  .founder-description {
+    font-size: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  /* hide slide by default */
+  .founder-info {
+    display: none;
+  }
+  
+  /* show slide on hover */
+  .founder-box:hover .founder-info {
+    display: block;
+  }
+  .huy{
+   margin-left: 20%;
+   width: 30%;
+   height: 300px;
+  
+   margin-right: 10%;
+   
+
+  }
+  /* phan nay cua nhom truong*/
+  .founder-box {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 200px;
+  }
+  
+  .founder-box:hover .founder-image {
+    transform: scale(1.1);
+  }
+  
+  .founder-box:hover .founder-info {
+    opacity: 1;
+  }
+  
+  .founder-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .founder-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .founder-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .founder-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+
+  /* Footer */
+
+footer {
+    margin-top: 500px;
+    width: 100%;
+    /* position: absolute; */
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.col .logo {
+    width: 80px;
+    margin-bottom: 30px;
+    font-family: "AlphaCentauri" !important;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: "AlphaCentauri" !important;
+    text-transform: uppercase;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: #fff;
+} 
+
+.col form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.col form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.col form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.col form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.col form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span {
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+    0% {
+        left: -20px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+ 
